@@ -36,7 +36,6 @@ const ProjectCard : React.FC<ProjectCardProps> = ({projectName, projectDescripti
         <a href={urlAccessProject} target={isMobileData ? '_parent' : '_blank'}>
         <div className='swiper-slide-header__content-card-item-main-more-btn'>Get Demo</div>
         </a>
-        
       </div>
     </div>
   );
