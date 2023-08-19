@@ -1,0 +1,172 @@
+.app-contact-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 .5em 0 .5em;
+}
+
+.app-contact-content__review {
+  width: 100%;
+  height: 100%;
+  flex: 1.5;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 7em;
+  padding-left: 1.5em;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5em;
+}
+
+.app-contact-content__form {
+  width: 100%;
+  height: 100%;
+  flex: 1.455;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding: 3rem 0rem 4rem 5rem;
+  margin-right: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-contact-content__review p {
+  margin-top: 1em;
+  font-weight: 400;
+  line-height: 1.7em;
+  font-size: 1.1em;
+}
+
+.app-contact-content__review > div {
+  display: flex;
+  align-content: center;
+  gap: 1.3em;
+  margin-top: 1.2em;
+}
+
+.app-contact-content__review h4::after {
+  width: 100%;
+  height: .1em;
+  display: block;
+  background-color: var(--smooth-color-black);
+  content: "";
+  margin-top: 12px;
+  margin-bottom: 12px;
+  position: absolute;
+  opacity: .7;
+}
+
+.app-contact-content__review > div {
+  margin-top: 2em;
+}
+
+.app-contact-content__review > div > div a img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.app-contact-content__review > div > a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.app-contact-content__review > div > a:hover {
+  text-decoration: none;
+  /* color: #16825d; */
+}
+
+.app-contact-content__form form {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+}
+
+.app-contact-content__form form div {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+}
+
+.app-contact-content__form form div label {
+  /* font-size: .9em; */
+  font-weight: 600;
+}
+
+.app-contact-content__form form div input,
+.app-contact-content__form form div textarea,
+.app-contact-content__form form div select {
+  width: 90%;
+}
+
+.app-contact-content__form form div input {
+  padding: .5em;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--smooth-color-black);
+  background-color: transparent;
+  color: #16825d;
+  font-weight: 600;
+  font-size: .9em;
+}
+
+.app-contact-content__form form div input:focus {
+  border-bottom-color: #16825d;
+  outline-color: #16825d;
+}
+
+.app-contact-content__form form div select {
+  padding: .7em;
+  border: none;
+}
+
+.app-contact-content__form form div input::placeholder {
+  color: var(--smooth-color-black);
+  font-weight: normal;
+}
+
+.app-contact-content__form form div textarea {
+  border: none;
+  border-bottom: 1px solid var(--smooth-color-black);
+  padding: 5px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  background-color: transparent;
+  resize: none !important;
+}
+
+.app-contact-content__form form div textarea:focus {
+  outline: none;
+}
+
+#notif-msg {
+  font-size: 1em !important;
+  position: absolute;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  left: 10px;
+  bottom: 20px;
+  padding: .5em 1em .5em 1em !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--color-black);
+  border-radius: .2em;
+  color: var(--color-black);
+  display: none;
+}

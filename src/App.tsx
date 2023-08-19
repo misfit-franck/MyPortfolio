@@ -6,6 +6,7 @@ import NoExistPage from './pages/NoExistPage.tsx';
 import HomeFragment from './pages/fragmets/HomeFragment.tsx';
 import { AboutFragment } from './pages/fragmets/AboutFragment.tsx';
 import { PortfolioFragment } from './pages/fragmets/PortfolioFragment.jsx';
+import ContactFragment from './pages/fragmets/ContactFragment.tsx';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route index element={<HomeFragment />} />
             <Route path='about' element={<AboutFragment />} />
             <Route path='portfolio' element={<PortfolioFragment />} />
+            <Route path='contact' element={<ContactFragment />} />
           </Route>
           <Route path='*' element={<NoExistPage />}></Route>
         </Routes>

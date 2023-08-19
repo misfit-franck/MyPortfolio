@@ -54,17 +54,17 @@ export const AboutFragment = () => {
             </a>
           </div>
           <div>
-            <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>
+            <a href='https://www.facebook.com/profile.php?id=100091249239627' target='_blank' rel='noopener'>
               <img src='./src/assets/icons/facebook.png' alt='Facebook' title='My Posts, My Pages, My Contribution on these Groups'/>
             </a>
           </div>
           <div>
-            <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>
+            <a href='https://twitter.com/FMekoulou01001' target='_blank' rel='noopener'>
               <img src='./src/assets/icons/twitter.png' alt='Twitter' title='Maybe My Tweets? See here'/>
             </a>
           </div>
           <div>
-            <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>
+            <a href='https://github.com/misfit-franck' target='_blank' rel='noopener'>
               <img src='./src/assets/icons/github.png' alt='Github' title='Access To My Amazing Built Project Using Github'/>
             </a>
           </div>
