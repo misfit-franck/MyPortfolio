@@ -32,17 +32,25 @@ export class OnbordingProjectSlider extends React.Component {
             {this.props.headTitle} <span data-aos='fade-down'>+27</span>{' '}
           </h2>
           <div className='row'>
-            <p data-aos='fade-left'>
-              Frontend-only projects (UI/UX) using a variety of technologies,
-              highlighting my expertise in the development of modern, fluid user
-              interfaces.
-            </p>
+            <p data-aos='fade-left'>{this.props.headDescription}</p>
             <div className='project-slider-nav'>
-              <div className='p-p-indicator p-p-indic-prev' onClick={this.prevSlide}>
-                <img src='../../src/assets/icons/left-arrow.png' alt='left arrow control'/>
+              <div
+                className='p-p-indicator p-p-indic-prev'
+                onClick={this.prevSlide}
+              >
+                <img
+                  src='../../src/assets/icons/left-arrow.png'
+                  alt='left arrow control'
+                />
               </div>
-              <div className='p-p-indicator p-p-indic-next' onClick={this.nextSlide}>
-                <img src='../../src/assets/icons/right-arrow.png' alt='right arrow control' />
+              <div
+                className='p-p-indicator p-p-indic-next'
+                onClick={this.nextSlide}
+              >
+                <img
+                  src='../../src/assets/icons/right-arrow.png'
+                  alt='right arrow control'
+                />
               </div>
             </div>
           </div>
@@ -54,55 +62,29 @@ export class OnbordingProjectSlider extends React.Component {
               className='splide-workspace-render'
               options={{
                 arrows: false,
+                pagination: false,
                 snap: true,
-                // autoplay: true,
-                isNavigation: false,
                 focus: 0,
                 perPage: 2.6,
-                // interval: 2000,
-                pagination: false,
                 rewind: true,
-                loop: true
+                loop: true,
               }}
-              onMoved={(splide) => this.setState({currentSlide: splide.index})}
+              onMoved={(splide) =>
+                this.setState({ currentSlide: splide.index })
+              }
               ref={this.splideRef}
             >
-              <SplideSlide>
-                <ProjectCard
-                  projectPreviewURL=''
-                  projectName='My Own Portfolio'
-                  projectDescription='Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit amet, adipisicing'
-                  urlAccessProject='rpg'
-                  githubReposURL='rpg'
-                />
-              </SplideSlide>
-              <SplideSlide>
-                <ProjectCard
-                  projectPreviewURL=''
-                  projectName='My Own Portfolio'
-                  projectDescription='Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit amet, adipisicing'
-                  urlAccessProject='rpg'
-                  githubReposURL='rpg'
-                />
-              </SplideSlide>
-              <SplideSlide>
-                <ProjectCard
-                  projectPreviewURL=''
-                  projectName='My Own Portfolio'
-                  projectDescription='Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit amet, adipisicing'
-                  urlAccessProject='rpg'
-                  githubReposURL='rpg'
-                />
-              </SplideSlide>
-              <SplideSlide>
-                <ProjectCard
-                  projectPreviewURL=''
-                  projectName='My Own Portfolio'
-                  projectDescription='Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit amet, adipisicing'
-                  urlAccessProject='rpg'
-                  githubReposURL='rpg'
-                />
-              </SplideSlide>
+              {this.props.projects.map((project) => (
+                <SplideSlide key={project.id}>
+                  <ProjectCard
+                    projectPreviewURL={project.urlPreview}
+                    projectName={project.name}
+                    projectDescription={project.description}
+                    urlAccessProject={project.urlAccess}
+                    githubReposURL={project.urlGitRepos}
+                  />
+                </SplideSlide>
+              ))}
             </Splide>
           </div>
         </div>
