@@ -1,12 +1,12 @@
 import './css/App.css';
 import React from 'react';
-import HomePage from './pages/HomePage.tsx';
+import HomePage from './pages/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NoExistPage from './pages/NoExistPage.tsx';
-import HomeFragment from './pages/fragmets/HomeFragment.tsx';
-import { AboutFragment } from './pages/fragmets/AboutFragment.tsx';
+import NoExistPage from './pages/NoExistPage';
+import HomeFragment from './pages/fragmets/HomeFragment';
+import { AboutFragment } from './pages/fragmets/AboutFragment';
+import ContactFragment from './pages/fragmets/ContactFragment';
 import { PortfolioFragment } from './pages/fragmets/PortfolioFragment.jsx';
-import ContactFragment from './pages/fragmets/ContactFragment.tsx';
 
 function App() {
   return (
