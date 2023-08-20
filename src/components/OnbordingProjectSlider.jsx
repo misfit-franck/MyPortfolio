@@ -68,6 +68,20 @@ export class OnbordingProjectSlider extends React.Component {
                 perPage: 2.6,
                 rewind: true,
                 loop: true,
+                breakpoints: {
+                  600: {
+                    perPage: 1,
+                    arrows: true
+                  },
+                  360: {
+                    perPage: 1,
+                    arrows: true
+                  },
+                  412: {
+                    perPage: 1,
+                    arrows: true
+                  }
+                }
               }}
               onMoved={(splide) =>
                 this.setState({ currentSlide: splide.index })

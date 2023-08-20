@@ -39,7 +39,7 @@ export class PortfolioFragment extends React.Component {
       {
         'key': '2',
         'title': 'Mobile Apps Projects',
-        'description': '+20 mobile frontend (UI-UX) and Front-Backend Complete application projects. These applications are available as downloads for iOS and Android.',
+        'description': '+20 mobile frontend and Front-Backend Complete application projects. Available as downloads',
         'projects': MobileAppsProjects,
       },
 

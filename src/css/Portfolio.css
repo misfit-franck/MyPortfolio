@@ -2,7 +2,7 @@
   display: flex;
   align-items: start;
   /* flex-direction: column; */
-  justify-content: space-between !important;
+  /* justify-content: space-between !important; */
   margin-bottom: 20px;
   margin-left: 25px;
   height: 100% !important;
@@ -232,7 +232,7 @@ button.slick-arrow.slick-next {
 
 .swiper-slide-header__content-wrapper-card-item-main .container {
   margin-left: .8em;
-  margin-top: 1em;
+  margin-top: .5em;
   width: -moz-fit-content;
   width: fit-content;
 }

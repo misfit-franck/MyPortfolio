@@ -405,7 +405,7 @@ a:hover {
   background-origin: border-box;
   background-size: cover;
   /* border: 2px solid #dddddd65; */
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--smooth-color-black);
   border-radius: 0.4em;
   background-color: #16825d;
 }
@@ -464,4 +464,47 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   /* visual in light mode */
+  /* body {
+    background-color: #3e3e3e;
+  }
+
+  #app {
+    background-color: #1a2335;
+    -webkit-box-shadow: -2px 1px 40px 0px #232941;
+    -moz-box-shadow: -2px 1px 40px 0px #232941;
+    box-shadow: -2px 1px 40x 0px #232941;
+  }
+
+  .outlined-btn {
+    background-color: #232941;
+  }
+
+  a {
+    color: #e2e1e1a1;
+  }
+
+  .outlined-btn:hover {
+    background-color: #232941b7;
+  }
+
+  .app-header-nav ul a.active {
+    color: var(--slime-white-color);
+  }
+
+  .app-header-nav ul a.active::after {
+    background-color: var(--slime-white-color);
+  }
+
+  .app-main-content__profile-view-card,
+  .app-about-content__profile-view-card  {
+    border-color: #e2e1e165;
+  }
+
+  .app-main-content__profile-view-profile {
+    border-color: #e2e1e165;
+  }
+
+  .app-about-content-container h2 {
+    color: white !important;
+  } */
 }

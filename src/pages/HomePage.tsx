@@ -1,4 +1,5 @@
 import { Outlet ,Link } from 'react-router-dom';
+import '../css/Responsive.css';
 
 const HomePage = () => {
   return (
