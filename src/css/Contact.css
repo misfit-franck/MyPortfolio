@@ -65,6 +65,7 @@
 
 .app-contact-content__review > div {
   margin-top: 2em;
+  flex-wrap: wrap;
 }
 
 .app-contact-content__review > div > div a img {
@@ -136,7 +137,7 @@
 
 .app-contact-content__form form div input::placeholder {
   color: var(--smooth-color-black);
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 .app-contact-content__form form div textarea {

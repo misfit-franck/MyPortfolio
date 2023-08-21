@@ -1,3 +1,4 @@
+/* Mobiles Responsives Rules : START */
 @media screen and (max-width: 600px) and (orientation: portrait) {
   body {
     padding: 0 !important;
@@ -336,5 +337,178 @@
   .swiper-slide-header h2 {
     line-height: 1.2em !important;
     margin-bottom: .2em !important;
+  }
+}
+/* Mobiles Responsives Rules : END */
+
+
+/* Tablets Responsives Rules : START */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #app {
+    /* background-color: whitesmoke !important; */
+  }
+  /* portfolio */
+  .swiper-slide-header .row {
+    font-size: .9em !important;
+  }
+  .swiper-slide-header h2 {
+    font-size: 1.3em !important;
+  }
+
+}
+/* Tablets Responsives Rules : END */
+
+/* Larges Desktops Responsives Rules : START */
+@media screen and (min-width: 1025px) {
+  /* home page */
+
+}
+/* Larges Desktops Responsives Rules : END */
+
+
+@media screen and (max-width: 1159px) and (max-height: 603px) {
+  #logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  body {
+    overflow-y: scroll !important;
+  }
+
+  #app > div {
+    padding-top: .5em !important;
+  }
+  .app-header {
+    height: 45px !important;
+  }
+  .app-main-content__description h1 {
+    font-size: 5.3em !important;
+    letter-spacing: .1em !important;
+  }
+  .app-main-content {
+    padding-right: 0 !important;
+  }
+  .app-main-content .row {
+    align-items: center !important;
+  }
+  .app-main-content__profile-view {
+    max-height: 400px !important;
+  }
+  .app-main-content__description p,
+  .app-home-page__content-description-social-reference {
+    font-size: 1.1em !important;
+  }
+  .app-home-page__content-description-social-reference {
+    margin-top: .5em !important;
+  }
+  .app-home-page__content-usr-vabout {
+    margin-top: 1.8em !important;
+  }
+  .app-home-page__content-action {
+    margin-top: 1em !important;
+  }
+  .app-main-content__description span {
+    top: 143px !important;
+    left: 38px !important;
+  }
+  /* about page */
+  .app-about-content {
+    overflow-y: hidden !important;
+  }
+  .app-about-content-container::after {
+    margin-top: 1.3em !important;
+  }
+  .app-about-content__profile-view {
+    max-height: 500px !important;
+    flex: 1.4 !important;
+  }
+  .app-about-content__description {
+    padding-left: .4em !important;
+  }
+  .app-about-content__description h1 {
+    font-size: 2.3em !important;
+  }
+  .app-about-content__description p {
+    font-size: 1.1em !important;
+    font-weight: 400 !important;
+  }
+  .app-about-content__description h3 {
+    margin-top: 1.5em !important;
+  }
+  .app-about-content__description button {
+    margin-top: 2em !important;
+  }
+  /* portfolio page */
+  .swiper-slide-header h2 {
+    font-size: 1.9em !important;
+  }
+  .swiper-slide-header span {
+    font-size: 50% !important;
+    height: 25 !important;
+  }
+  button.slick-arrow {
+    font-size: .9em !important;
+    padding-top: .5em !important;
+    padding-bottom: .5em !important;
+  }
+  .swiper-slide-header .row {
+    font-size: 1em !important;
+  }
+  .p-p-indicator {
+    height: 25px !important;
+  }
+  .p-p-indicator img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .swiper-slide-header__content-wrapper {
+    padding-top: 1.3em !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main {
+    width: 430px !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main__content {
+    margin-left: 1em !important;
+    padding-top: .5em !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main__content p {
+    font-size: 1em !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main .container {
+    margin-left: 2em !important;
+  }
+  /* contact page */
+  .app-contact-content__review > div {
+    gap: 1em !important;
+  }
+}
+@media screen and (max-width: 1038px) {
+  .app-main-content__description h1 {
+    font-size: 5em !important;
+    letter-spacing: .1em !important;
+  }
+  .app-main-content {
+    padding-right: 0 !important;
+  }
+  .app-main-content .row {
+    align-items: center !important;
+  }
+  .app-main-content__profile-view {
+    max-height: 400px !important;
+  }
+}
+@media screen and (max-width: 1054px) {
+  .app-main-content {
+    padding-right: 0 !important;
+  }
+  .app-main-content .row {
+    align-items: center !important;
+  }
+  .app-main-content__profile-view {
+    max-height: 400px !important;
+  }
+  .app-main-content__description h1 {
+    font-size: 4.8em !important;
+    letter-spacing: .1em !important;
   }
 }

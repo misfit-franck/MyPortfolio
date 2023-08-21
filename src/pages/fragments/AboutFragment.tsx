@@ -11,7 +11,7 @@ export const AboutFragment = () => {
       </div>
       <div className='app-about-content__description'>
         <div className='app-about-content-container'>
-          <h2 data-aos='fade-left'>About Me</h2>
+          <h2 data-aos='fade-left' id='abs'>About Me</h2>
           <h1 data-aos='fade-right'>Franck Mekoulou</h1>
           <p>
             Passionate developer with 3 years' experience in C++ development.
@@ -46,7 +46,7 @@ export const AboutFragment = () => {
             </button>
           </div>
         </div>
-        <h3>Track Me As Your Want</h3>
+        <h3 id='adji'>Track Me As Your Want</h3>
         <div className='flex-center' id='p-social'>
           <div>
             <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>

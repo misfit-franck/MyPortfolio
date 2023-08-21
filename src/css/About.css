@@ -44,6 +44,11 @@
   position: relative;
 }
 
+.app-about-content__description p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
 .app-about-content-container h2 {
   color: #16825d;
   font-weight: 600 !important;

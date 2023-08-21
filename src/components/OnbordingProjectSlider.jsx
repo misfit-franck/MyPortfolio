@@ -80,6 +80,21 @@ export class OnbordingProjectSlider extends React.Component {
                   412: {
                     perPage: 1,
                     arrows: true
+                  },
+                  1159: {
+                    perPage: 2.3
+                  },
+                  1038: {
+                    perPage: 2.2
+                  },
+                  1068: {
+                    perPage: 2.1
+                  },
+                  1104: {
+                    perPage: 2.2
+                  },
+                  1024: {
+                    perPage: 2
                   }
                 }
               }}
