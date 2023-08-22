@@ -1,10 +1,28 @@
+import { useEffect, useRef } from "react";
+
 const HomeFragment = () => {
+  let winXDimens: number = 0, winYDimens: number = 0;
+  const myNameHeadingRef = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+    winXDimens = window.innerWidth;
+    winYDimens = window.innerHeight;
+  },[]);
+
+  window.addEventListener('resize', () => {
+    winXDimens = window.innerWidth;
+    if (winXDimens <= 918) {
+      console.warn('Contact ~ Break Design Value Detected.');
+      myNameHeadingRef.current!.textContent = 'I\'m Franck Mekoulou.';
+    }
+  });
+  console.info(`X: ${winXDimens} | Y: ${winYDimens}`);
   return (
     <div className="app-main-content">
       <div className="row">
         <div className="app-main-content__description">
           <h3 data-aos="fade-up">Welcome 🫡</h3>
-          <h1 data-aos="fade-up">I'm Franck {<br></br>}&nbsp; Mekoulou.</h1>
+          <h1 data-aos="fade-up" ref={myNameHeadingRef}>I'm Franck {<br></br>}&nbsp; Mekoulou.</h1>
           <span data-aos="fade-right">The Happy code 🥳</span>
           <p className="app-main-content__description-p" data-aos="fade-up">
             Versatile developer passionate about creating mobile, web, and system applications.

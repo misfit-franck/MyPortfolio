@@ -33,10 +33,11 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  padding: 0.9rem 1.3rem 0.9rem 1.3rem;
+  padding: 0.9rem 1.3rem 2rem 1.3rem;
+  margin-bottom: 2em;
   background-color: var(--slime-white-color);
   /* background-color: var(--body-background); */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 li {
@@ -116,6 +117,7 @@ a:hover {
   height: 100%;
   max-width: 1366px;
   max-height: 750px;
+  margin-bottom: 2em;
   background-color: var(--secondary-color);
   border-radius: 0.3em;
   /* border: 2px solid #dddddd65 !important; */
@@ -516,6 +518,10 @@ a:hover {
     border-color: #e2e1e165;
   }
 
+  .app-about-content__description h2::after {
+    background-color: #dcdcdc !important;
+  }
+
   .app-about-content-container::after {
     background-color: #dcdcdc !important;
   }
@@ -556,5 +562,12 @@ a:hover {
   }
   .app-contact-content__form form div textarea {
     border-color: #dcdcdc !important;
+  }
+  .app-home-page__content-usr-vabout h3 > span {
+    color: #16825d;
+    font-weight: bold;
+  }
+  .app-contact-content__review h4::after {
+    background-color: #dcdcdc !important;
   }
 }

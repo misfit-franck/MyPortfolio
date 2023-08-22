@@ -8,6 +8,7 @@
     overflow-y: auto !important;
     height: 100vh !important;
     max-height: 100% !important;
+    background-color: pink !important;
   }
   .app-header-nav,
   .app-header__left-content::after {
@@ -54,6 +55,7 @@
   .app-home-page__content-action {
     gap: 15px !important;
     flex-direction: column !important;
+    flex-wrap: wrap;
     margin-left: 0 !important;
     margin-top: 2.8em !important;
   }
@@ -100,7 +102,6 @@
     flex-direction: column !important;
   }
 
-
   .app-portfolio-content {
     margin-left: 0 !important;
     height: 100% !important;
@@ -111,7 +112,7 @@
   }
   .swiper-slide-header {
     margin-top: 3em;
-    padding-top: .1em;
+    padding-top: 0.1em;
   }
   .swiper-slide-header h2 {
     padding-right: 0.3em !important;
@@ -123,7 +124,7 @@
   .swiper-slide-header .row p {
     width: 100% !important;
     font-size: 1em !important;
-    margin-left: .5em !important;
+    margin-left: 0.5em !important;
     text-align: center;
   }
   .swiper-slide-header .row .project-slider-nav {
@@ -144,7 +145,7 @@
     height: 210px !important;
   }
   .swiper-slide-header__content-wrapper-card-item-main__content {
-    padding-top: .7em !important;
+    padding-top: 0.7em !important;
     padding-left: 1.5em !important;
   }
   .swiper-slide-header__content-wrapper-card-item-main__content p {
@@ -157,7 +158,7 @@
   }
   .swiper-slide-header__content-wrapper-card-item-main .container {
     margin-left: 1.6em !important;
-    margin-top: .8em !important;
+    margin-top: 0.8em !important;
   }
   .swiper-slide-header__content-wrapper-card-item-main .container h4 {
     font-size: 0.9em !important;
@@ -170,15 +171,15 @@
   .swiper-slide-header__content-card-item-main-more-btn {
     position: relative !important;
     margin-top: 1em !important;
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
     margin: 0 auto;
     font-size: 1em !important;
     font-weight: bold !important;
     top: 0.1em !important;
     border-top-right-radius: 0.4em;
     border-bottom-right-radius: 0.4em;
-    font-size: .9em !important;
+    font-size: 0.9em !important;
   }
   .splide__arrow.splide__arrow--prev,
   .splide__arrow.splide__arrow--next {
@@ -236,23 +237,23 @@
     font-size: 1.3em !important;
   }
   .swiper-slide-header .row p {
-    font-size: .9.11em !important;
+    font-size: 0.9.11em !important;
     padding: 0 !important;
-    margin-left: .9em !important;
+    margin-left: 0.9em !important;
     text-align: center;
   }
   .swiper-slide-header__content-card-item-main-more-btn {
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
-    font-size: .8em !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    font-size: 0.8em !important;
   }
 }
 @media screen and (max-width: 412px) and (orientation: portrait) {
   .swiper-slide-header__content-wrapper-card-item-main__content {
-    padding-top: .3em !important;
+    padding-top: 0.3em !important;
   }
   .swiper-slide-header__content-wrapper-card-item-main__content p {
-    margin-top: .3em !important;
+    margin-top: 0.3em !important;
   }
   .swiper-slide-header h2 {
     font-size: 1.7em !important;
@@ -263,16 +264,16 @@
     height: 193px !important;
   }
   .swiper-slide-header h2 {
-    margin-top: .4em !important;
+    margin-top: 0.4em !important;
   }
   .swiper-slide-header .row p {
     width: 100% !important;
     font-size: 15px !important;
-    margin-left: .5em !important;
+    margin-left: 0.5em !important;
     text-align: center;
   }
   .swiper-slide-header {
-    margin-top: .5em !important;
+    margin-top: 0.5em !important;
   }
   .swiper-slide-header__content-wrapper {
     padding-top: 0 !important;
@@ -290,7 +291,7 @@
     font-size: 14px !important;
   }
   .swiper-slide-header {
-    margin-top: .2em !important;
+    margin-top: 0.2em !important;
   }
   .swiper-slide-header__content-wrapper-card-item-main {
     height: 450px !important;
@@ -315,16 +316,16 @@
 @media screen and (max-width: 375px) and (orientation: portrait) {
   .swiper-slide-header h2 {
     line-height: 1.2em !important;
-    margin-bottom: .2em !important;
+    margin-bottom: 0.2em !important;
   }
   .swiper-slide-header__content-wrapper {
-    padding-top: .3em !important;
+    padding-top: 0.3em !important;
   }
 }
 @media screen and (max-width: 414px) and (orientation: portrait) {
   .swiper-slide-header h2 {
     line-height: 1.2em !important;
-    margin-bottom: .2em !important;
+    margin-bottom: 0.2em !important;
   }
   .swiper-slide-header .row p {
     font-size: 15px !important;
@@ -336,35 +337,215 @@
 @media screen and (max-width: 428px) and (orientation: portrait) {
   .swiper-slide-header h2 {
     line-height: 1.2em !important;
-    margin-bottom: .2em !important;
+    margin-bottom: 0.2em !important;
   }
 }
 /* Mobiles Responsives Rules : END */
 
-
 /* Tablets Responsives Rules : START */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    overflow-y: scroll !important;
+    padding: 0 !important;
+  }
   #app {
-    /* background-color: whitesmoke !important; */
+    /* background-color: rgb(185, 179, 179) !important; */
+    overflow-y: auto !important;
+    height: 100vh !important;
+    max-height: 100% !important;
+  }
+  .app-header-nav,
+  .app-header__left-content::after {
+    display: none !important;
+  }
+  .app-header__left-content {
+    width: calc(100% - 13%) !important;
+  }
+  .app-header__right-content {
+    width: 13% !important;
+    position: relative;
+  }
+  .app-header__right-content-menu-icon img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  #app > div {
+    padding-top: 0.5em !important;
+  }
+  .app-main-content {
+    margin-top: 0.8em !important;
+  }
+  /* about */
+  .app-about-content {
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+  }
+  .app-about-content__profile-view {
+    width: 70% !important;
+    margin: auto !important;
+  }
+  .app-about-content__description {
+    padding-left: 1em !important;
+    padding-bottom: 1em !important;
   }
   /* portfolio */
   .swiper-slide-header .row {
-    font-size: .9em !important;
+    font-size: 0.9em !important;
   }
   .swiper-slide-header h2 {
     font-size: 1.3em !important;
   }
+  .swiper-slide-header__content-card-item-main-more-btn {
+    padding: 0.4em 1em 0.4em 1em !important;
+  }
+}
+@media screen and (max-width: 915px) {
+  .app-main-content .row {
+    /* background-color: rosybrown !important; */
+    align-items: center !important;
+    flex-direction: column-reverse !important;
+    justify-content: inherit !important;
+  }
+  .app-main-content__description p  {
+    margin-left: .5em !important;
+  }
+  .app-main-content__profile-view {
+    flex: inherit !important;
+    display: none !important;
+    max-width: 55% !important;
+  }
+  .app-main-content__description span {
+    display: none !important;
+  }
+  .app-banner div h3 {
+    font-size: .9em !important;
+  }
+  .app-home-page__content-action {
+    margin-left: .5em !important;
+  }
+  .app-home-page__content-usr-vabout {
+    margin-left: 1em !important;
+  }
+}
 
+@media screen and (max-height: 642px) and (max-width: 990px) {
+  /* portfolio page */
+  .swiper-slide-header__content-wrapper-card-item-main {
+    width: 420px !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main-img {
+    height: 210px !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main__content {
+    padding-top: 0.3em !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main__content h3 {
+    font-size: 1.3em !important;
+  }
+  .swiper-slide-header__content-wrapper-card-item-main__content p {
+    margin-top: 0.1em !important;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  #app .app-main-content .row {
+    flex-direction: column !important;
+    text-align: center;
+    justify-content: center !important;
+  }
+  .app-header-nav,
+  .app-header__left-content::after {
+    display: none !important;
+  }
+  .app-header__left-content {
+    width: calc(100% - 13%) !important;
+  }
+  .app-header__right-content {
+    width: 13% !important;
+    position: relative;
+  }
+  .app-header__right-content-menu-icon img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .app-main-content__description {
+    padding: 0 !important;
+  }
+  .app-main-content__description h1 {
+    width: 100% !important;
+    font-size: 3em !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 0.2em !important;
+  }
+  .app-main-content__description span {
+    position: inherit !important;
+    display: none !important;
+    writing-mode: initial !important;
+  }
+  .app-main-content__profile-view {
+    display: none !important;
+  }
+  .app-main-content__description p {
+    margin-left: 0 !important;
+  }
+  .app-main-content__description-p {
+    margin-bottom: 2em !important;
+  }
+  .app-home-page__content-action,
+  .app-home-page__content-usr-vabout {
+    margin: auto !important;
+    justify-content: center !important;
+    margin-top: 1em !important;
+  }
+  .app-banner {
+    margin-top: 1em !important;
+    flex-direction: column !important;
+  }
+
+  .app-about-content {
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+  }
+
+  .app-about-content__description {
+    padding-left: 1.5em !important;
+  }
 }
 /* Tablets Responsives Rules : END */
 
 /* Larges Desktops Responsives Rules : START */
 @media screen and (min-width: 1025px) {
   /* home page */
-
+}
+@media screen and (min-width: 1025px) and (max-height: 610px) {
+  #app > div {
+    padding-top: 0.5em !important;
+  }
+  .app-header {
+    height: 45px !important;
+  }
+  .app-main-content__description h1 {
+    font-size: 5em !important;
+    letter-spacing: 0.1em !important;
+  }
+  .app-main-content {
+    padding-right: 0 !important;
+  }
+  .app-main-content .row {
+    align-items: center !important;
+  }
+  .app-main-content__profile-view {
+    max-height: 390px !important;
+  }
+  .app-main-content__description span {
+    top: 150px !important;
+  }
+  .app-banner div h3 {
+    font-size: 1em !important;
+  }
 }
 /* Larges Desktops Responsives Rules : END */
-
 
 @media screen and (max-width: 1159px) and (max-height: 603px) {
   #logo {
@@ -376,14 +557,14 @@
   }
 
   #app > div {
-    padding-top: .5em !important;
+    padding-top: 0.5em !important;
   }
   .app-header {
     height: 45px !important;
   }
   .app-main-content__description h1 {
     font-size: 5.3em !important;
-    letter-spacing: .1em !important;
+    letter-spacing: 0.1em !important;
   }
   .app-main-content {
     padding-right: 0 !important;
@@ -399,7 +580,7 @@
     font-size: 1.1em !important;
   }
   .app-home-page__content-description-social-reference {
-    margin-top: .5em !important;
+    margin-top: 0.5em !important;
   }
   .app-home-page__content-usr-vabout {
     margin-top: 1.8em !important;
@@ -423,7 +604,7 @@
     flex: 1.4 !important;
   }
   .app-about-content__description {
-    padding-left: .4em !important;
+    padding-left: 0.4em !important;
   }
   .app-about-content__description h1 {
     font-size: 2.3em !important;
@@ -447,9 +628,9 @@
     height: 25 !important;
   }
   button.slick-arrow {
-    font-size: .9em !important;
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
+    font-size: 0.9em !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
   }
   .swiper-slide-header .row {
     font-size: 1em !important;
@@ -469,7 +650,7 @@
   }
   .swiper-slide-header__content-wrapper-card-item-main__content {
     margin-left: 1em !important;
-    padding-top: .5em !important;
+    padding-top: 0.5em !important;
   }
   .swiper-slide-header__content-wrapper-card-item-main__content p {
     font-size: 1em !important;
@@ -485,7 +666,7 @@
 @media screen and (max-width: 1038px) {
   .app-main-content__description h1 {
     font-size: 5em !important;
-    letter-spacing: .1em !important;
+    letter-spacing: 0.1em !important;
   }
   .app-main-content {
     padding-right: 0 !important;
@@ -509,6 +690,6 @@
   }
   .app-main-content__description h1 {
     font-size: 4.8em !important;
-    letter-spacing: .1em !important;
+    letter-spacing: 0.1em !important;
   }
 }
