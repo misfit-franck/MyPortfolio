@@ -10,6 +10,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
+  projectPreviewURL,
   projectName,
   projectDescription,
   githubReposURL,
@@ -22,7 +23,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="swiper-slide-header__content-wrapper-card-item-main"
         data-aos="fade-left"
       >
-        <div className="swiper-slide-header__content-wrapper-card-item-main-img" style={{backgroundImage: `url('https://github.com/misfit-franck/Japan-Sushi-Website/raw/main/preview.png')`}} ></div>
+        <div className="swiper-slide-header__content-wrapper-card-item-main-img" 
+        style={{backgroundImage: `url(${projectPreviewURL})`}} ></div>
         <div className="swiper-slide-header__content-wrapper-card-item-main__content">
           <h3 data-aos="fade-up">{projectName}</h3>
           <p data-aos="fade-right">{projectDescription}</p>

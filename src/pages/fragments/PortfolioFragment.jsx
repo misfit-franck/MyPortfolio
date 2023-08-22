@@ -17,6 +17,7 @@ const OnBordingProjectsStruct = [
     description:
       "Frontend-only projects (UI/UX) using a variety of technologies,highlighting my expertise in the development of modern, fluid user interfaces.",
     projects: FrontEndProjects,
+    moreProjectCount: 17
   },
   {
     key: "1",
@@ -24,6 +25,7 @@ const OnBordingProjectsStruct = [
     description:
       'A set of applications built from the ground up "Frontend & Backend", drawing on my skills in DBMS, backend development and the cloud.',
     projects: FullStacksAppsProjects,
+    moreProjectCount: 11
   },
   {
     key: "2",
@@ -31,6 +33,8 @@ const OnBordingProjectsStruct = [
     description:
       "+20 mobile frontend and Front-Backend Complete application projects. Available as downloads",
     projects: MobileAppsProjects,
+    moreProjectCount: 22
+
   },
 ];
 
@@ -56,6 +60,7 @@ export const PortfolioFragment = () => {
               headTitle={onbording.title}
               headDescription={onbording.description}
               projects={onbording.projects}
+              moreProjectCount={onbording.moreProjectCount}
             />
           ))}
         </Slider>

@@ -37,7 +37,7 @@ export class OnbordingProjectSlider extends React.Component {
               title="Avaible on Github"
             >
               <span data-aos="fade-down" className="project-count-indicator">
-                +27
+                +{this.props.moreProjectCount}
               </span>{" "}
             </a>
           </h2>
