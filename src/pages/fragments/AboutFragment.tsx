@@ -1,5 +1,9 @@
 import '../../css/index.css';
 import '../../css/About.css';
+import facebook from '../../assets/icons/facebook.png';
+import linkedln from '../../assets/icons/linkedln.png';
+import twitter from '../../assets/icons/twitter.png';
+import github from '../../assets/icons/github.png';
 
 export const AboutFragment = () => {
   return (
@@ -50,22 +54,22 @@ export const AboutFragment = () => {
         <div className='flex-center' id='p-social'>
           <div>
             <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>
-              <img src='./src/assets/icons/linkedln.png' alt='Linkedln' title='Get My Linkedln Activity'/>
+              <img src={linkedln} alt='Linkedln' title='Get My Linkedln Activity'/>
             </a>
           </div>
           <div>
             <a href='https://www.facebook.com/profile.php?id=100091249239627' target='_blank' rel='noopener'>
-              <img src='./src/assets/icons/facebook.png' alt='Facebook' title='My Posts, My Pages, My Contribution on these Groups'/>
+              <img src={facebook} alt='Facebook' title='My Posts, My Pages, My Contribution on these Groups'/>
             </a>
           </div>
           <div>
             <a href='https://twitter.com/FMekoulou01001' target='_blank' rel='noopener'>
-              <img src='./src/assets/icons/twitter.png' alt='Twitter' title='Maybe My Tweets? See here'/>
+              <img src={twitter} alt='Twitter' title='Maybe My Tweets? See here'/>
             </a>
           </div>
           <div>
             <a href='https://github.com/misfit-franck' target='_blank' rel='noopener'>
-              <img src='./src/assets/icons/github.png' alt='Github' title='Access To My Amazing Built Project Using Github'/>
+              <img src={github} alt='Github' title='Access To My Amazing Built Project Using Github'/>
             </a>
           </div>
         </div>

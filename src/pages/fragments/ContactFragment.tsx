@@ -1,5 +1,10 @@
 import '../../css/index.css';
 import '../../css/Contact.css';
+import facebook from '../../assets/icons/facebook.png';
+import linkedln from '../../assets/icons/linkedln.png';
+import twitter from '../../assets/icons/twitter.png';
+import github from '../../assets/icons/github.png';
+
 import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -105,22 +110,22 @@ export const ContactFragment: React.FC = () => {
           <div className='flex-center'>
             <div>
               <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>
-                <img src='../../src/assets/icons/linkedln.png' alt='Linkedin' />
+                <img src={linkedln} alt='Linkedin' />
               </a>
             </div>
             <div>
               <a href='https://www.facebook.com/profile.php?id=100091249239627' target='_blank' rel='noopener'>
-                <img src='../../src/assets/icons/facebook.png' alt='Facebook' />
+                <img src={facebook} alt='Facebook' />
               </a>
             </div>
             <div>
               <a href='https://twitter.com/FMekoulou01001' target='_blank' rel='noopener'>
-                <img src='../../src/assets/icons/twitter.png' alt='Twitter' />
+                <img src={twitter} alt='Twitter' />
               </a>
             </div>
             <div>
               <a href='https://github.com/misfit-franck' target='_blank' rel='noopener'>
-                <img src='../../src/assets/icons/github.png' alt='Github' />
+                <img src={github} alt='Github' />
               </a>
             </div>
             <a href='mailto:log.franckmekoulou@outlook.com'>

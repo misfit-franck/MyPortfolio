@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard.tsx";
+import arrow_left from '../assets/icons/left-arrow.png';
+import arrow_right from '../assets/icons/right-arrow.png';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
@@ -49,7 +51,7 @@ export class OnbordingProjectSlider extends React.Component {
                 onClick={this.prevSlide}
               >
                 <img
-                  src="../../src/assets/icons/left-arrow.png"
+                  src={arrow_left}
                   alt="left arrow control"
                 />
               </div>
@@ -58,7 +60,7 @@ export class OnbordingProjectSlider extends React.Component {
                 onClick={this.nextSlide}
               >
                 <img
-                  src="../../src/assets/icons/right-arrow.png"
+                  src={arrow_right}
                   alt="right arrow control"
                 />
               </div>

@@ -1,4 +1,8 @@
 import React from "react";
+import github from '../assets/icons/github.png';
+import css_file from '../assets/icons/css_file.png';
+import html_file from '../assets/icons/html_file.png';
+import js_file from '../assets/icons/html_file.png';
 
 interface ProjectCardProps {
   projectPreviewURL: string;
@@ -34,21 +38,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="row">
             <a href="https://google.com">
               <img
-                src="../../src/assets/icons/html_file.png"
+                src={html_file}
                 alt="Html Icon Language"
                 title="HTML base foundation of course"
               />
             </a>
             <a href="https://google.com">
               <img
-                src="../../src/assets/icons/css_file.png"
+                src={css_file}
                 alt="Css Icon Language"
                 title="CSS UI Design Style used"
               />
             </a>
             <a href="https://google.com">
               <img
-                src="../../src/assets/icons/js_file.png"
+                src={js_file}
                 alt="Javascript Icon Language"
                 title="Then Javascript"
               />
@@ -60,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="row">
             <a href={githubReposURL} target="_blank" rel="noopener">
               <img
-                src="../../src/assets/icons/github.png"
+                src={github}
                 alt="Github Account"
                 title="Get this project on Github Now."
               />

@@ -1,5 +1,7 @@
 import { Outlet ,Link } from 'react-router-dom';
 import '../css/Responsive.css';
+import SVGMenu from '../assets/menu.svg';
+console.info(SVGMenu);
 
 const HomePage = () => {
   return (
@@ -23,7 +25,7 @@ const HomePage = () => {
               <h4 className='lang'>Fr.</h4>
             </div>
             <div className='app-header__right-content-menu-icon menu-icon'>
-              <img src='./src/assets/menu.svg' alt='menu' className='m-icon' />
+              <img src={SVGMenu} alt='menu' className='m-icon' />
             </div>
           </div>
         </header>
