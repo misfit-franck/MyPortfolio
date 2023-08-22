@@ -1,7 +1,7 @@
 export const FrontEndProjects = [
   {
     'id': '0',
-    'urlPreview': 'https://',
+    'urlPreview': '',
     'name': 'My Own Portfolio',
     'description':
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit amet, adipisicing',
@@ -10,12 +10,12 @@ export const FrontEndProjects = [
   },
   {
     'id': '1',
-    'urlPreview': 'https://',
+    'urlPreview': 'https://github.com/misfit-franck/Japan-Sushi-Website/raw/main/preview.png',
     'name': 'Sushi-Man Japan',
     'description':
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit amet, adipisicing',
     'urlAccess': 'https://github.com/',
-    'urlGitRepos': 'https://github.com/',
+    'urlGitRepos': 'https://github.com/misfit-franck/Japan-Sushi-Website',
   },
   {
     'id': '2',
