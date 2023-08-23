@@ -4,12 +4,15 @@ import SVGMenu from '../assets/menu.svg';
 console.info(SVGMenu);
 
 const HomePage = () => {
+  const reloadPage = () => {
+    window.location.reload();
+  }
   return (
     <main id='app'>
       <div>
         <header className='app-header'>
           <div className='app-header__left-content'>
-            <div id='logo' data-aos='fade-up'>f.</div>
+            <div id='logo' data-aos='fade-up' onClick={reloadPage}>f.</div>
             <nav className='app-header-nav'>
               <ul className='flex-center'>
                 <li><Link to={'/'} className='link translate active' data-key='home_link'>Home Page</Link> </li>

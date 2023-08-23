@@ -693,3 +693,12 @@
     letter-spacing: 0.1em !important;
   }
 }
+@media screen and (max-height: 645px) {
+  .app-home-page__content-usr-vabout {
+    margin-top: 1.5em !important;
+  }
+  .app-banner {
+    padding-top: .5em !important;
+    height: 45px !important;
+  }
+}

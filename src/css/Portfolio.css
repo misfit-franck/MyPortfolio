@@ -121,6 +121,10 @@ button.slick-arrow.slick-next {
   background-color: var(--smooth-color-black);
 }
 
+.swiper-slide-header h2 > a {
+  text-decoration: none;
+}
+
 .swiper-slide-header span {
   width: 50px;
   height: 30px;
@@ -179,6 +183,7 @@ button.slick-arrow.slick-next {
   height: 100%;
   overflow: hidden;
   background-color: #f4f5f5;
+  border: 1px solid var(--smooth-color-black);
   position: relative;
   border-radius: .4em;
   padding-bottom: 1em;

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import MyProfile from '../../assets/images/profile.png';
 
 const HomeFragment = () => {
   let winXDimens: number = 0, winYDimens: number = 0;
@@ -43,7 +44,7 @@ const HomeFragment = () => {
         </div>
         <div className="app-main-content__profile-view" data-aos="fade-left">
           <div className="app-main-content__profile-view-card">
-            <div className="app-main-content__profile-view-profile"></div>
+            <div className="app-main-content__profile-view-profile" style={{backgroundImage: `url('${MyProfile}')`}}></div>
           </div>
         </div>
       </div>

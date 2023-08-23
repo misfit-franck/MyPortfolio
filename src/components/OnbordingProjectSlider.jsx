@@ -114,6 +114,12 @@ export class OnbordingProjectSlider extends React.Component {
                   1272: {
                     perPage: 2.4,
                   },
+                  1274: {
+                    perPage: 2.5
+                  },
+                  1273: {
+                    perPage: 2.5
+                  },
                   1134: {
                     perPage: 2.2,
                   },

@@ -1,5 +1,16 @@
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSerif';
+  src: url('../assets/fonts/NotoSerif_Condensed-Regular.ttf');
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -7,6 +18,7 @@
 
   --slime-white-color: #efefef;
   --smooth-color-black: #0e0e0e;
+  --primary-color: #16825d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,12 +48,22 @@ body {
   padding: 0.9rem 1.3rem 2rem 1.3rem;
   margin-bottom: 2em;
   background-color: var(--slime-white-color);
-  /* background-color: var(--body-background); */
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 li {
   list-style: none;
+}
+
+input,
+input::placeholder,
+textarea,
+textarea::placeholder,
+div,
+button,
+select,
+option {
+  font-family: 'NotoSerif', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
 }
 
 button {
@@ -53,12 +75,11 @@ button {
   line-height: 1;
   font-size: 0.9em;
   font-family: 600;
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 }
 
 .primary-btn {
   min-width: 200px;
-  background-color: #16825d;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   font-weight: 700;
@@ -72,8 +93,6 @@ button {
 .outlined-btn {
   min-width: 200px;
   background-color: #dcdcdc;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
 }
 
 .outlined-btn:hover {
@@ -117,19 +136,15 @@ a:hover {
   height: 100%;
   max-width: 1366px;
   max-height: 750px;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em !important;
   background-color: var(--secondary-color);
   border-radius: 0.3em;
-  /* border: 2px solid #dddddd65 !important; */
   border: 1px solid var(--primary-color) !important;
   margin: 0 auto;
   position: relative;
   -webkit-box-shadow: -2px 1px 46px 0px rgba(204, 203, 203, 0.582);
   -moz-box-shadow: -2px 1px 46px 0px rgba(204, 203, 203, 0.582);
   box-shadow: -2px 1px 46px 0px rgba(204, 203, 203, 0.582);
-  /* -webkit-box-shadow: -4px 3px 22px 0px rgba(25,22,22,0.48) inset;
-  -moz-box-shadow: -4px 3px 22px 0px rgba(25,22,22,0.48) inset;
-  box-shadow: -4px 3px 22px 0px rgba(25,22,22,0.48) inset; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,16 +235,13 @@ a:hover {
   width: calc(100% - 15%);
   height: 1px;
   background-color: #e2e1e165;
-  /* background-color: var(--body-background); */
 }
 
 .app-header-nav ul a.active::after {
   content: "";
   width: 100px;
   height: 1.5px;
-  /* background-color: var(--color-easy-white); */
-  /* background-color: var(--smooth-color-black); */
-  background-color: #16825d;
+  background-color: var(--primary-color);
   border-radius: 3px;
   display: block;
   position: absolute;
@@ -252,7 +264,6 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
 }
 
 .app-header__right-content-menu-icon img {
@@ -303,7 +314,6 @@ a:hover {
   font-size: 7em;
   word-wrap: break-word;
   text-overflow: ellipsis;
-  color: var(--primary-color);
   line-height: 1em !important;
   letter-spacing: 0.2.999em;
   font-weight: 600;
@@ -391,7 +401,6 @@ a:hover {
   width: 100%;
   height: 480px;
   max-height: 500px;
-  /* border: 2px solid #dddddd65; */
   border-radius: 0.4em;
   border: 1px solid var(--smooth-color-black);
   padding: 0.5em;
@@ -400,7 +409,6 @@ a:hover {
 .app-main-content__profile-view-profile {
   width: 100%;
   height: 100%;
-  background-image: url("/assets/images/profiles/profile.png");
   background-repeat: no-repeat;
   background-position: 0 2px center;
   background-origin: border-box;
@@ -474,11 +482,11 @@ a:hover {
     color: #dcdcdc !important;
   }
   body {
-    background-color: #595959;
+    background-color: rgba(65, 62, 62, 0.616);
   }
 
   #app {
-    background-color: #090909;
+    background-color: #212121;
     -webkit-box-shadow: -2px 1px 40px 0px #444444;
     -moz-box-shadow: -2px 1px 40px 0px #444444;
     box-shadow: -2px 1px 40x 0px #444444;

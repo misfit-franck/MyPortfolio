@@ -45,7 +45,7 @@ export const PortfolioFragment = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
-    verticalSwiping: false,
+    verticalSwiping: true,
     accessibility: true,
     focusOnSelect: true,
     pauseOnHover: false,
