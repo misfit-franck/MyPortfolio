@@ -4,13 +4,15 @@ import facebook from '../../assets/icons/facebook.png';
 import linkedln from '../../assets/icons/linkedln.png';
 import twitter from '../../assets/icons/twitter.png';
 import github from '../../assets/icons/github.png';
+import MyProfile from '../../assets/images/profile.png';
+
 
 export const AboutFragment = () => {
   return (
     <div className='app-about-content'>
       <div className='app-about-content__profile-view' data-aos='zoom-in'>
         <div className='app-about-content__profile-view-card'>
-          <div className='app-main-content__profile-view-profile' id='abt'></div>
+          <div className='app-main-content__profile-view-profile' style={{backgroundImage: `url('${MyProfile}')`}} id='abt'></div>
         </div>
       </div>
       <div className='app-about-content__description'>

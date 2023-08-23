@@ -7,9 +7,7 @@
   overflow-y: auto !important;
 }
 
-.app-main-content__profile-view-profile#abt {
-  background-image: url("/assets/images/profiles/profile_1.jpg") !important;
-}
+
 
 .app-about-content__profile-view {
   width: 100%;

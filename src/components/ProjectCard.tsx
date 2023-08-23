@@ -2,7 +2,7 @@ import React from "react";
 import github from '../assets/icons/github.png';
 import css_file from '../assets/icons/css_file.png';
 import html_file from '../assets/icons/html_file.png';
-import js_file from '../assets/icons/html_file.png';
+import js_file from '../assets/icons/js_file.png';
 
 interface ProjectCardProps {
   projectPreviewURL: string;
