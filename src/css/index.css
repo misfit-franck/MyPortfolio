@@ -14,7 +14,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
 
   --slime-white-color: #efefef;
   --smooth-color-black: #0e0e0e;
@@ -471,7 +471,7 @@ a:hover {
   padding-right: 0.3em;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   h1,
   h2,
   h3,
@@ -578,4 +578,4 @@ a:hover {
   .app-contact-content__review h4::after {
     background-color: #dcdcdc !important;
   }
-}
+} */
