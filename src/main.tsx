@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route index element={<HomeFragment />} />
           <Route path="about" element={<AboutFragment />} />
           <Route path="portfolio" element={<PortfolioFragment />} />
+          {/* <Route path="services" element={<PortfolioFragment />} /> */}
           <Route path="contact" element={<ContactFragment />} />
         </Route>
         <Route path="*" element={<NoExistPage />}></Route>

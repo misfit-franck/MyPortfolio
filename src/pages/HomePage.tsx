@@ -32,6 +32,7 @@ const HomePage = () => {
                 <li><Link to={'/'} className='link translate active' data-key='home_link'>Home Page</Link> </li>
                 <li><Link to={'/about'} className='link translate' data-key='about_link'>About Me</Link></li>
                 <li><Link to={'/portfolio'} className='link translate' data-key='portfolio_link'>Portfolio</Link></li>
+                <li><Link to={'/services'} className='link translate' data-key='portfolio_link'>Services</Link></li>
                 <li><Link to={'/contact'} className='link translate' data-key='contact_link'>Contact</Link></li>
               </ul>
             </nav>

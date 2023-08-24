@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import MyProfile from '../../assets/images/profile.png';
 
 const HomeFragment = () => {
@@ -17,6 +18,20 @@ const HomeFragment = () => {
       myNameHeadingRef.current!.textContent = 'I\'m Franck Mekoulou.';
     }
   });
+
+  const navigate = useNavigate();
+  const gotToContactFragment = () => {
+    navigate('/contact');
+  }
+
+  const handleContactProject = () => {
+    const email = 'log.franckmekoulou@Outlook.com';
+    const emailSubject = 'Talking About New Project';
+    const emailBody = 'Hello\n, I\'d like to get more information...\nThank you,';
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+  }
+
   console.info(`X: ${winXDimens} | Y: ${winYDimens}`);
   return (
     <div className="app-main-content">
@@ -34,8 +49,8 @@ const HomeFragment = () => {
             INSTAGRAM / FACEBOOK / TWITTER / GITHUB
           </p>
           <div className="app-home-page__content-action" data-aos="zoom-out">
-            <button type="button" className="primary-btn">Got a Project?</button>
-            <button type="button" className="outlined-btn">Let's Talks.</button>
+            <button type="button" className="primary-btn" onClick={handleContactProject}>Got a Project?</button>
+            <button type="button" className="outlined-btn" onClick={gotToContactFragment}>Let's Talks.</button>
           </div>
           <div className="app-home-page__content-usr-vabout" data-aos="fade-up">
             <h3><span>+</span>113 Projects</h3>

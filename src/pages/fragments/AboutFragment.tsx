@@ -5,12 +5,16 @@ import linkedln from '../../assets/icons/linkedln.png';
 import twitter from '../../assets/icons/twitter.png';
 import github from '../../assets/icons/github.png';
 import MyProfile from '../../assets/images/profile.png';
-
+import { useNavigate } from 'react-router-dom';
 
 export const AboutFragment = () => {
   const handleDownload = () => {
-    const url = '../../assets/documents/franckmekoulou-cv-en.pdf';
+    const url = 'https://1drv.ms/b/s!AqzRXj9HjH2bgg_wT3VmG62PB9Gj?e=RPrsF2';
     window.open(url, '_blank');
+  }
+  const navigate = useNavigate();
+  const gotToPortfolioFragment = () => {
+    navigate('/portfolio');
   }
   return (
     <div className='app-about-content'>
@@ -51,7 +55,7 @@ export const AboutFragment = () => {
           </p>
           <div className='flex-center'>
             <button type='button' className='primary-btn' onClick={handleDownload}>Download My cv</button>
-            <button type="button" className='outlined-btn'>
+            <button type="button" className='outlined-btn' onClick={gotToPortfolioFragment}>
               See Portfolio
             </button>
           </div>

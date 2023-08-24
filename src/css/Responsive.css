@@ -8,7 +8,7 @@
     overflow-y: auto !important;
     height: 100vh !important;
     max-height: 100% !important;
-    background-color: pink !important;
+    /* background-color: pink !important; */
   }
   .app-header-nav,
   .app-header__left-content::after {
