@@ -8,6 +8,10 @@ import MyProfile from '../../assets/images/profile.png';
 
 
 export const AboutFragment = () => {
+  const handleDownload = () => {
+    const url = '../../assets/documents/franckmekoulou-cv-en.pdf';
+    window.open(url, '_blank');
+  }
   return (
     <div className='app-about-content'>
       <div className='app-about-content__profile-view' data-aos='zoom-in'>
@@ -46,7 +50,7 @@ export const AboutFragment = () => {
             developer for your team, don't hesitate to contact me!
           </p>
           <div className='flex-center'>
-            <button type='button' className='primary-btn'>Download My cv</button>
+            <button type='button' className='primary-btn' onClick={handleDownload}>Download My cv</button>
             <button type="button" className='outlined-btn'>
               See Portfolio
             </button>
@@ -56,7 +60,7 @@ export const AboutFragment = () => {
         <div className='flex-center' id='p-social'>
           <div>
             <a href='https://www.linkedin.com/in/franck-mekoulou/' target='_blank' rel='noopener'>
-              <img src={linkedln} alt='Linkedln' title='Get My Linkedln Activity'/>
+              <img src={linkedln} alt='Linkedln' title='Get My Linkedln Profile'/>
             </a>
           </div>
           <div>
@@ -71,7 +75,7 @@ export const AboutFragment = () => {
           </div>
           <div>
             <a href='https://github.com/misfit-franck' target='_blank' rel='noopener'>
-              <img src={github} alt='Github' title='Access To My Amazing Built Project Using Github'/>
+              <img src={github} alt='Github' title='Access To My Amazing Built Project Via Github'/>
             </a>
           </div>
         </div>
